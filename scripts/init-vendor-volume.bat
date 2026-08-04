@@ -1,6 +1,6 @@
 @echo off
 setlocal
-echo [init-vendor] kiro_poc 専用 vendor ボリュームを初期化します...
+echo [init-vendor] copilot_poc 専用 vendor ボリュームを初期化します...
 
 docker volume inspect admin_prj_laravel_vendor >nul 2>&1
 if errorlevel 1 (
@@ -8,11 +8,11 @@ if errorlevel 1 (
   exit /b 1
 )
 
-docker volume create kiro_poc_laravel_vendor >nul 2>&1
+docker volume create copilot_poc_laravel_vendor >nul 2>&1
 
 docker run --rm ^
   -v admin_prj_laravel_vendor:/from:ro ^
-  -v kiro_poc_laravel_vendor:/to ^
+  -v copilot_poc_laravel_vendor:/to ^
   alpine sh -c "cp -a /from/. /to/ && test -f /to/autoload.php && echo COPY_OK"
 
 if errorlevel 1 (
@@ -20,5 +20,5 @@ if errorlevel 1 (
   exit /b 1
 )
 
-echo [init-vendor] 完了: kiro_poc_laravel_vendor （LLax27 とは独立）
+echo [init-vendor] 完了: copilot_poc_laravel_vendor （LLax27 とは独立）
 endlocal
