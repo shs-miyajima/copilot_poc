@@ -1,4 +1,4 @@
-# kiro_poc
+# copilot_poc
 
 Laravel 12 + Docker（PostgreSQL）のローカル開発環境 PoC。
 
@@ -29,11 +29,11 @@ run_debug.bat logs
 
 | サービス | コンテナ名 | 内容 |
 |----------|------------|------|
-| app | `kiro_poc_app` | PHP-FPM（`laravel_app:1.0`） |
-| nginx | `kiro_poc_nginx` | localhost:8000 |
-| db | `kiro_poc_postgres` | PostgreSQL 18（localhost:5433） |
+| app | `copilot_poc_app` | PHP-FPM（`laravel_app:1.0`） |
+| nginx | `copilot_poc_nginx` | localhost:8000 |
+| db | `copilot_poc_postgres` | PostgreSQL 18（localhost:5433） |
 
-vendor ボリューム: `kiro_poc_laravel_vendor`（LLax27 とは独立）
+vendor ボリューム: `copilot_poc_laravel_vendor`（LLax27 とは独立）
 
 ## 開発
 

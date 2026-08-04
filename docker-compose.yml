@@ -1,7 +1,7 @@
 services:
   app:
     image: laravel_app:1.0
-    container_name: kiro_poc_app
+    container_name: copilot_poc_app
     working_dir: /var/www/html/
     volumes:
       - .:/var/www/html:delegated
@@ -29,7 +29,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: kiro_poc_nginx
+    container_name: copilot_poc_nginx
     ports:
       - "8000:80"
     volumes:
@@ -41,7 +41,7 @@ services:
 
   db:
     image: postgres:18
-    container_name: kiro_poc_postgres
+    container_name: copilot_poc_postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -53,12 +53,12 @@ services:
 
 volumes:
   laravel_vendor:
-    name: kiro_poc_laravel_vendor
+    name: copilot_poc_laravel_vendor
     driver: local
   postgres:
     driver: local
 
 networks:
   default:
-    name: kiro_poc_default
+    name: copilot_poc_default
     driver: bridge
