@@ -1,12 +1,13 @@
 <!-- Sync Impact Report
-Version change: placeholder -> 1.0.0
-Modified principles: none (new constitution)
-Added sections: Additional Constraints, Development Workflow
+Version change: 1.0.0 -> 1.1.0
+Modified principles: none
+Added principles: VI. Coding Standards Compliance
+Added sections: none
 Removed sections: none
 Follow-up TODOs: none
 -->
 
-# Kiro PoC Constitution
+# copilot_poc Constitution
 
 ## Core Principles
 
@@ -25,6 +26,9 @@ Secrets, credentials, and environment-specific values MUST stay outside the repo
 ### V. Observable and Documented Delivery
 Behavioral changes MUST be explainable through code, tests, and repository documentation. Logging, error handling, and setup steps MUST be sufficient for another contributor to understand and verify the change without tribal knowledge.
 
+### VI. Coding Standards Compliance
+Any design or implementation plan MUST comply with the internal coding rules in `docs/design-spec.md` (Model-only DB access, soft-delete/multi-tenant scoping, optimistic locking via `version`, session and file-upload handling, and the security rules for SQL injection, XSS, CSRF, and path traversal). Planning work (`/speckit.plan`) MUST read `docs/design-spec.md` alongside this constitution, record compliance in the Constitution Check gate, and flag any deviation as a violation requiring justification in the plan's Complexity Tracking table. This gate is re-evaluated after Phase 1 design as a self-review pass before the plan is considered complete.
+
 ## Additional Constraints
 This project uses Laravel 12, Docker Compose, PostgreSQL, Vite, and modern PHP tooling. New dependencies MUST be justified by the requirement, documented in the repository, and compatible with the existing local container workflow. Feature work MUST preserve the ability to run the app locally with the provided scripts and containers.
 
@@ -34,4 +38,4 @@ Work MUST follow the repository's Spec Kit flow: capture intent in a specificati
 ## Governance
 This constitution supersedes ad hoc practices for this repository. Amendments require a documented rationale, review of impact on testing and deployment, and explicit version updates. All pull requests and local changes MUST demonstrate compliance with these principles through tests, clear intent, and any required documentation updates.
 
-**Version**: 1.0.0 | **Ratified**: 2026-08-04 | **Last Amended**: 2026-08-04
+**Version**: 1.1.0 | **Ratified**: 2026-08-04 | **Last Amended**: 2026-08-04

@@ -1,13 +1,14 @@
-# Copilot Instructions for Kiro PoC
+# Copilot Instructions for copilot_poc
 
 ## Project Context
 - This repository is a Laravel 12 PoC running in Docker Compose with PostgreSQL, Vite, PHPUnit, Vitest, and Playwright.
 - Prefer changes that preserve the existing local developer workflow using the provided scripts and containers.
 - Keep the implementation simple, explicit, and consistent with Laravel conventions.
+- The internal Laravel coding standards (DB access, multi-tenancy, sessions, security rules, etc.) live in `docs/design-spec.md`. Do not inline its contents here — it is long and only needs to be loaded during spec-driven design (`/speckit.plan`), not for every chat turn.
 
 ## Working Principles
 - Follow the Spec Kit workflow for feature work in order: constitution, specification, clarification, planning, task breakdown, implementation, and verification.
-- For new or significant changes, start from the relevant Spec Kit artifact in .specify/templates/ and the project constitution in .specify/memory/constitution.md before writing code.
+- For new or significant changes, start from the relevant Spec Kit artifact in .specify/templates/ and the project constitution in .specify/memory/constitution.md before writing code. The constitution's Coding Standards Compliance principle requires `/speckit.plan` to also load and comply with `docs/design-spec.md`.
 - Prefer user value and business intent over implementation shortcuts.
 - Do not skip ahead from specification to implementation when the task is user-facing, contract-changing, or otherwise significant; use the appropriate Spec Kit step first.
 

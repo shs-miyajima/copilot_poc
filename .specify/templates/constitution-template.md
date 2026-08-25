@@ -1,50 +1,50 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# [プロジェクト名] 憲章
+<!-- 例: 仕様憲章、タスクフロー憲章 など -->
 
-## Core Principles
+## コア原則
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### [原則 1 名称]
+<!-- 例: I. ライブラリファースト -->
+[原則 1 の説明]
+<!-- 例: すべての機能は独立したライブラリとして始める; ライブラリは自己完結し、独立してテスト可能で、文書化されている必要がある; 組織専用のライブラリは避ける -->
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### [原則 2 名称]
+<!-- 例: II. CLI インターフェース -->
+[原則 2 の説明]
+<!-- 例: すべてのライブラリは CLI で機能を公開する; テキスト入出力プロトコル: stdin/args → stdout、エラー → stderr; JSON と人間可読形式をサポートする -->
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### [原則 3 名称]
+<!-- 例: III. テストファースト（非交渉） -->
+[原則 3 の説明]
+<!-- 例: TDD を必須とする: テスト作成 → ユーザー承認 → テスト失敗 → その後実装; Red-Green-Refactor サイクルを厳守する -->
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### [原則 4 名称]
+<!-- 例: IV. 統合テスト -->
+[原則 4 の説明]
+<!-- 例: 統合テストが必要な重点領域: 新しいライブラリ契約テスト、契約変更、サービス間通信、共有スキーマ -->
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### [原則 5 名称]
+<!-- 例: V. 可観測性、VI. バージョン管理と破壊的変更、VII. 単純さ -->
+[原則 5 の説明]
+<!-- 例: テキスト入出力はデバッグ性を保証する; 構造化ログが必要; MAJOR.MINOR.BUILD 形式; またはシンプルに始め、YAGNI の原則を守る -->
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## [セクション 2 名称]
+<!-- 例: 追加制約、セキュリティ要件、パフォーマンス基準など -->
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+[セクション 2 の内容]
+<!-- 例: テクノロジースタック要件、コンプライアンス基準、デプロイポリシーなど -->
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## [セクション 3 名称]
+<!-- 例: 開発ワークフロー、レビュー手順、品質ゲートなど -->
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+[セクション 3 の内容]
+<!-- 例: コードレビュー要件、テストゲート、リリース承認プロセスなど -->
 
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+## ガバナンス
+<!-- 例: 憲章は他の慣習に優先する; 改訂には文書化、承認、移行計画が必要 -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+[ガバナンスのルール]
+<!-- 例: すべての PR / レビューは準拠を検証する必要がある; 複雑さは理由を説明する必要がある; 実行時開発ガイダンスには [GUIDANCE_FILE] を使用する -->
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**バージョン**: [CONSTITUTION_VERSION] | **承認日**: [RATIFICATION_DATE] | **最終改訂日**: [LAST_AMENDED_DATE]
+<!-- 例: バージョン: 2.1.1 | 承認日: 2025-06-13 | 最終改訂日: 2025-07-16 -->
